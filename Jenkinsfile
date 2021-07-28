@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                // test script - for alex
+                // test script            
                 sh 'bash jenkins/test.sh'
             }
         }
