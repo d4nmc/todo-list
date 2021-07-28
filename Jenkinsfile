@@ -20,8 +20,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                sh 'python3 create.py'
-                sh 'bash jenkins/deploy.sh'
+               sh 'bash jenkins/deploy.sh'
             }
         }
     }
