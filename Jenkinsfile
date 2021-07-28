@@ -24,4 +24,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            cobertura coberturaReportFile: 'coverage.xml', failNoReports: false 'junit/test-results.xml'
+        }
+    }
 }
